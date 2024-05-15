@@ -50,32 +50,31 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg px-5 py-3 d-flex">
+  <div class="container-fluid d-flex">
     <div class="d-flex text-center align-items-center">
-            <img src="image/logo.png" alt="" style="width:50px">
-            <div class="ps-3">Adjie Jaya</div>
-        </div>
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+      <img src="image/logo.png" alt="" style="width:50px">
+      <div class="ps-3 navbar-brand">Adjie Jaya</div>
+  </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+          <a class="nav-link active" style="color: #007613;" aria-current="page" href="#">Beranda</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Visi-misi</a>
+          <a class="nav-link"style="color: #007613;" href="#">Visi-misi</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Profile</a>
+          <a class="nav-link"style="color: #007613;" href="#">Profile</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Produk</a>
+          <a class="nav-link"style="color: #007613;" href="#">Produk</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="tentang-kami.html">Tentang kami</a>
+          <a class="nav-link" href="tentang-kami.html" style="color: #007613;">Tentang kami</a>
         </li>
       </ul>
     </div>
@@ -94,7 +93,7 @@
           dan Inpara IR NUNTRI ZINC.
   </div>
     </section>
-  <section class="text-center p-4" style="height: 500px;">
+  <section class="text-center p-4">
     <h3 class="mb-4">Produk</h3>
     <div class="d-flex justify-content-center">
       <div class='row row-gap-md-2 w-75 g-4'>
@@ -138,11 +137,12 @@
     </div>
   </section>
 
-  <section class=" mt-4 d-flex flex-row" style="background-color: #007613">
-    <div class="col p-4 text-white">
+  <section class="mt-4 rounded-end-5" style="background-color: #007613; width: fit-content;">
+    <div class="row">
+    <div class="col-12 col-sm-6 p-4 text-white">
       <h2>Visi - Misi</h2>
       <div class="pt-4" style="width: 500px">
-        <p style="font-size:20px" class="text-white ps-4">
+        <p class="text-white ps-4">
           Visi :
           <br>
             Menjadi produsen benih padi yang terintegrasi secara nasional
@@ -161,13 +161,14 @@
         </p>  
         </div>
     </div>
-    <div class="col p-5">
-      <img src="image/image.png" alt="" style="width: 500px">
+    <div class="col-12 col-sm-6 p-5 mt-5">
+      <img src="image/image.png" alt="" style="width: 90%">
     </div>
+  </div>
   </section>
 
   <section class="d-flex justify-content-center">
-    <div class="text-center py-5  p-5 col-8">
+    <div class="text-center py-5 p-5 col-8">
       <h2>Sambutan Direktur Utama</h2>
       <img src="image/direktur.png" alt="" style="width: 200px">
       <div class="pt-4">
@@ -187,24 +188,20 @@
     </div>
   </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-  <script>
-    feather.replace();
-  </script>
 <!-- FOOTER  -->
 <footer class="container-fluid p-5" style="background-color: #D6BF58; color:white;">
     <div class="row">
-        <div class="col-3">
-            <img src="image/logo.png" alt="" style="width: 200px">
+        <div class="col-sm-4 col-12">
+            <img src="image/logo.png" class="p-4" style="width: 200px">
         </div>
-        <div class="col-3">
+        <div class="col-sm-4 col-12">
             <p>Adjie Jayax</p>
             <div>Jl. Atmo Sentono, Kel. Karangrejo, Kec. Metro Utara, Kota Metro, Prov Lampung
                 <div>+62 86787829229</div>
                 <div>adjiejaya@gmail.com</div>
             </div>
         </div>
-        <div class="col-3">
+        <div class="col-sm-4 col-12">
             <p>Hubungi Kami</p>
             <div>Tentang Kami</div>
                 <div>Syarat dan Ketentuan</div>
@@ -213,5 +210,10 @@
         </div>
     </div>
 </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
