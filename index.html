@@ -9,6 +9,7 @@
   <!-- Feather Icons CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     header {
       background-image: url('image/header.png');
@@ -42,32 +43,34 @@
       height: 200px;
       object-fit: cover;
     }
-    nav {
-            background-color: #FFBF21;
-            font-size: 18px;
-        }
   </style>
 </head>
 
 <body>
-    <nav class="navbar px-5 py-3">
+  <div class="topnav d-flex text-center align-items-center ps-4 justify-content-between py-3" id="myTopnav">
+    <div>
         <div class="d-flex text-center align-items-center">
-            <img src="image/logo.png" alt="" style="width:50px">
-            <div class="ps-3">Adjie Jaya</div>
+          <img src="image/logo.png" alt="" style="width:50px">
+          <div class="ps-3">Adjie Jaya</div>
         </div>
-        <div class="d-flex flex-row">
-            <div class='pe-4'><a href='index.html' class='text-dark text-decoration-none'>Beranda</a></div>
-            <div class='pe-4'><a href='#' class='text-dark text-decoration-none'>Visi Misi</a></div>
-            <div class='pe-4'><a href='#' class='text-dark text-decoration-none'>Profile</a></div>
-            <div class='pe-4'><a href='#' class='text-dark text-decoration-none'>Produk</a></div>
-            <div class='pe-4'><a href='tentang-kami.html' class='text-dark text-decoration-none'>Tentang Kami</a></div>
-        </div>
-    </nav>
+    </div>
+    <div class="pe-5">
+      <a href="index.html" class="active">Beranda</a>
+      <a href="#visi_misi">Visi-Misi</a>
+      <a href="#profil">Profil</a>
+      <a href="#produk">Produk</a>
+      <a href="lainya.html">Lainya</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
     <header>
       <div id="title-wrap">
       </div>
     </header>
-    <section class="d-flex justify-content-center">
+    <section class="d-flex justify-content-center" id="profil">
       <div class="text-center py-5 p-5 col-8">
         <h3>Profile Perusahaan</h3>
         <div>
@@ -76,7 +79,7 @@
           dan Inpara IR NUNTRI ZINC.
   </div>
     </section>
-  <section class="text-center p-4" style="height: 500px;">
+  <section class="text-center p-4" id="produk">
     <h3 class="mb-4">Produk</h3>
     <div class="d-flex justify-content-center">
       <div class='row row-gap-md-2 w-75 g-4'>
@@ -120,11 +123,12 @@
     </div>
   </section>
 
-  <section class=" mt-4 d-flex flex-row" style="background-color: #007613">
-    <div class="col p-4 text-white">
+  <section class="mt-4 rounded-end-5" style="background-color: #007613; width: fit-content;" id="visi_misi">
+    <div class="row">
+    <div class="col-12 col-sm-6 p-4 text-white">
       <h2>Visi - Misi</h2>
       <div class="pt-4" style="width: 500px">
-        <p style="font-size:20px" class="text-white ps-4">
+        <p class="text-white ps-4">
           Visi :
           <br>
             Menjadi produsen benih padi yang terintegrasi secara nasional
@@ -143,13 +147,14 @@
         </p>  
         </div>
     </div>
-    <div class="col p-5">
-      <img src="image/image.png" alt="" style="width: 500px">
+    <div class="col-12 col-sm-6 p-5 mt-5">
+      <img src="image/image.png" alt="" style="width: 90%">
     </div>
+  </div>
   </section>
 
   <section class="d-flex justify-content-center">
-    <div class="text-center py-5  p-5 col-8">
+    <div class="text-center py-5 p-5 col-8">
       <h2>Sambutan Direktur Utama</h2>
       <img src="image/direktur.png" alt="" style="width: 200px">
       <div class="pt-4">
@@ -169,31 +174,32 @@
     </div>
   </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-  <script>
-    feather.replace();
-  </script>
-<!-- FOOTER  -->
-<footer class="container-fluid p-5" style="background-color: #D6BF58; color:white;">
-    <div class="row">
-        <div class="col-3">
-            <img src="image/logo.png" alt="" style="width: 200px">
-        </div>
-        <div class="col-3">
-            <p>Adjie Jayax</p>
-            <div>Jl. Atmo Sentono, Kel. Karangrejo, Kec. Metro Utara, Kota Metro, Prov Lampung
-                <div>+62 86787829229</div>
-                <div>adjiejaya@gmail.com</div>
-            </div>
-        </div>
-        <div class="col-3">
-            <p>Hubungi Kami</p>
-            <div>Tentang Kami</div>
-                <div>Syarat dan Ketentuan</div>
-                <div>Pusat Bantuan</div>
-            </div>
-        </div>
-    </div>
-</footer>
+  <!-- FOOTER  -->
+  <footer class="container-fluid p-5" style="background-color: #D6BF58; color:white;">
+      <div class="row">
+          <div class="col-sm-4 col-12">
+              <img src="image/logo.png" class="p-4" style="width: 200px">
+          </div>
+          <div class="col-sm-4 col-12">
+              <p>Adjie Jayax</p>
+              <div>Jl. Atmo Sentono, Kel. Karangrejo, Kec. Metro Utara, Kota Metro, Prov Lampung
+                  <div>+62 86787829229</div>
+                  <div>adjiejaya@gmail.com</div>
+              </div>
+          </div>
+          <div class="col-sm-4 col-12">
+              <p>Hubungi Kami</p>
+              <div>Tentang Kami</div>
+                  <div>Syarat dan Ketentuan</div>
+                  <div>Pusat Bantuan</div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

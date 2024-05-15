@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pecel Lele Mas Bisma</title>
+  <link rel="icon" href="image/logo.png" type="image/x-icon">
+  <!-- Feather Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    header {
+      background-image: url('image/Spanduk Warung Pecel Lele Klasik Cokelat.png');
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    #title-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .title h1 {
+      background-color: darkmagenta;
+      margin-top: 30px;
+      color: white;
+    }
+
+    #title-wrap p {
+      color: white;
+      background-color: cadetblue;
+    }
+
+    #img-var {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topnav d-flex text-center align-items-center ps-4 justify-content-between py-3" id="myTopnav">
+    <div>
+        <div class="d-flex text-center align-items-center">
+          <img src="image/logo.png" alt="" style="width:50px">
+          <div class="ps-3">Adjie Jaya</div>
+        </div>
+    </div>
+    <div class="pe-5">
+      <a href="index.html">Beranda</a>
+      <a href="#news">Visi-Misi</a>
+      <a href="#contact">Profil</a>
+      <a href="#about">Produk</a>
+      <a href="lainya.html" class="active">Lainya</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+    <section id="laporan">
+        <h3>Laporan Laba Rugi</h3>
+        <iframe src="pdf/Laporan Laba Rugi cv adjie jaya.pdf" id="laba-rugi"></iframe>
+        <h3>Stok Persediaan</h3>
+        <iframe src="pdf/stok persediaan cv adjie jaya.pdf" id="stok"></iframe>
+    </section>
+
+    <!-- FOOTER  -->
+    <footer class="container-fluid p-5" style="background-color: #D6BF58; color:white;">
+      <div class="row">
+          <div class="col-sm-4 col-12">
+              <img src="image/logo.png" class="p-4" style="width: 200px">
+          </div>
+          <div class="col-sm-4 col-12">
+              <p>Adjie Jayax</p>
+              <div>Jl. Atmo Sentono, Kel. Karangrejo, Kec. Metro Utara, Kota Metro, Prov Lampung
+                  <div>+62 86787829229</div>
+                  <div>adjiejaya@gmail.com</div>
+              </div>
+          </div>
+          <div class="col-sm-4 col-12">
+              <p>Hubungi Kami</p>
+              <div>Tentang Kami</div>
+                  <div>Syarat dan Ketentuan</div>
+                  <div>Pusat Bantuan</div>
+              </div>
+          </div>
+      </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
